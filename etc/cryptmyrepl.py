@@ -28,7 +28,7 @@ class CryptMyRepl:
 '''[1:-1]
 
     script = [
-        r'''# Made with https://github.com/billythegoat356/Atlas\n\n# <3\n\n\n'''
+        '''# Made with https://github.com/billythegoat356/Atlas\n\n# <3\n\n\n'''
         r'''import os, base64, zlib''',
         r'''key: bytes = zlib.decompress(base64.b64decode(os.getenv('ENCRYPTION_KEY').encode()))''',
         r'''stream: bytes = zlib.decompress({!r})'''.format(compress(crypted)) + '\n',
